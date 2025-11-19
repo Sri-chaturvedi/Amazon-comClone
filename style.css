@@ -1,0 +1,362 @@
+/* ================= GLOBAL STYLES ================= */
+/* Reset margin and set default font for readability */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  height: 60px;
+  background-color: #016244; /* Dark green */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Logo container */
+.nav-logo {
+  height: 59px;
+  width: 113px;
+}
+
+/* Logo image styling */
+.logo {
+  background-image: url("Images/amazon.png"); /* Updated folder */
+  background-size: cover;
+  height: 50px;
+  width: 113px;
+}
+
+/* Generic border hover effect */
+.border {
+  border: 1.5px solid transparent;
+}
+
+.border:hover {
+  border: 1.5px solid white;
+}
+
+/* ================= BOX2 - DELIVERY ADDRESS ================= */
+.add-first {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-left: 23px;
+}
+
+.add-sec {
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 3px;
+  font-weight: 900;
+}
+
+.add-icon {
+  display: flex;
+  align-items: center; /* Align location icon and text */
+}
+
+/* ================= BOX3 - SEARCH BAR ================= */
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #A9166F; /* Pink background */
+  width: 840px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.nav-search:hover {
+  box-shadow: 3px 1px 9px black; /* Add hover shadow effect */
+}
+
+/* Dropdown inside search bar */
+.search-select {
+  background-color: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+
+.search-select:hover {
+  font-weight: 600; /* Highlight on hover */
+}
+
+/* Search input styling */
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+}
+
+/* Search button/icon */
+.search-icon {
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-icon:hover {
+  background-color: #3f3f3f; /* Darken on hover */
+}
+
+/* ================= NAVIGATION TEXT ================= */
+span {
+  font-size: 0.85rem;
+}
+
+.nav-second {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* ================= CART ================= */
+.nav-cart i {
+  font-size: 30px;
+}
+
+.nav-cart {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ================= PANEL / SECONDARY NAV ================= */
+.panel {
+  height: 40px;
+  background-color: #095749; /* Darker green */
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.panel-ops {
+  width: 95%;
+}
+
+.panel-ops p {
+  display: inline;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.panel-all {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  background-image: url("Images/HeroP.jpg"); /* Updated folder */
+  background-size: cover;
+  height: 300px;
+}
+
+/* ================= SHOP SECTION ================= */
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #E3E6E6; /* Light grey background */
+}
+
+/* Individual product box */
+.box {
+  height: 400px;
+  width: 23%;
+  background-color: white;
+  padding: 20px 0px 15px;
+  margin-top: 15px;
+}
+
+/* Product image */
+.box-img {
+  background-size: cover;
+  height: 300px;
+  margin: 1rem 0;
+}
+
+.box-img:hover {
+  cursor: pointer;
+}
+
+/* Content inside box */
+.box-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box-content p {
+  color: #2162a1;
+}
+
+.box-content p:hover {
+  cursor: pointer;
+  color: black; /* Highlight text on hover */
+}
+
+/* ================= SIGN-IN / RECOMMENDATION FRAME ================= */
+.rhf-frame {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rhf {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-top: 1px solid mediumspringgreen;
+  border-bottom: 1px solid mediumspringgreen;
+}
+
+.signin h2 {
+  font-size: 25px;
+  padding-bottom: 4px;
+}
+
+.signin button {
+  width: 195px;
+  height: 35px;
+  background-color: #FFD814; /* Amazon yellow button */
+  margin: 4px;
+  border-radius: 20px;
+  border: none;
+}
+
+.signin button span {
+  font-size: 14px;
+  color: #0F1111;
+}
+
+.signin button:hover {
+  background-color: #e9d677;
+  cursor: pointer;
+}
+
+/* New customer link */
+.newcustomer {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newcustomer a {
+  text-decoration: underline;
+  margin-left: 5px;
+  color: #2162a1;
+}
+
+.newcustomer a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  margin-top: 15px;
+}
+
+/* Top footer panel */
+.foot-panel1 {
+  background-color: #36475A;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.foot-panel1:hover {
+  background-color: #A6166D;
+  cursor: pointer;
+}
+
+/* Middle footer links */
+.foot-panel2 {
+  background-color: #242F3E;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Footer links */
+ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #DDDDDD;
+}
+
+ul {
+  margin-top: 50px;
+}
+
+ul p {
+  font-weight: 700;
+}
+
+ul a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Footer logo panel */
+.foot-panel3 {
+  background-color: #242F3E;
+  border-top: 0.5px solid white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  background-image: url("Images/amazon.png"); /* Updated folder */
+  background-size: cover;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+/* Bottom footer legal / copyright */
+.foot-panel4 {
+  font-size: 0.7rem;
+  text-align: center;
+  background-color: #131A22;
+  color: white;
+  height: 80px;
+}
+
+.pages {
+  padding-top: 25px;
+}
+
+.pages a {
+  margin-right: 10px;
+}
+
+.pages a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.copyright {
+  padding-top: 5px;
+}
